@@ -10,8 +10,9 @@ app = FastAPI(title="J.A.R.V.I.S. Backend")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_methods=["GET", "POST"],
-    allow_headers=["Content-Type"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
